@@ -1,0 +1,49 @@
+
+K
+join_login_customer4customer.CustomerLoginRepository.join_login_customerself(" ((&self(" ((&"ˆ2
+0
+) )(#""
+#unknown-value##unknown-value#2
+0
+) )(""
+#unknown-value##unknown-value#
+
+) )($"
+join *8&
+$
+) )(-query"
+
+select *82
+0
+*R *(W""
+#unknown-value##unknown-value#2
+0
+*9 *(A""
+#unknown-value##unknown-value#3
+1
+*9 *(D" 
+#get-field# id#get-field# id*2
+0
+*' *(/	""
+#unknown-value##unknown-value#"
+ 
+*' *(E
+"
+distinct *	8
+
+*' *(X"
+load *
+87
+5
+* *(!"$
+#get-field# gino#get-field# gino*
+
+* *(Y"
+load *8
+
+* *(_"
+all *8:
+8
+* *(_result""
+#unknown-value##unknown-value#
++ +(*=/Users/hungle/testing/user-service/app/repository/customer.py

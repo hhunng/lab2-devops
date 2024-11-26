@@ -1,0 +1,33 @@
+
+5
+json_date_serializercustomer.json_date_serializer8#"Type %s not serializable"strobj (obj ("©"
+ 
+ ('"
+?python-unknown?8
+6
+ (("
+#is-instance##is-instance#*2bool+
+)
+ (("
+#bool##bool# *2bool"
+ (( * ("6"
+ 
+ ("
+	isoformat *8
+ ("Ñ2
+0
+2 (;"
+#new-object##new-object#2type;
+9
+2 (;"
+__init__type.__init__(*2NoneType8*
+(
+ (;	"
+	#binop %#	#binop %#* 
+
+
+ (<
+"
+	TypeError(*	2
+ (<
+*6/Users/hungle/testing/user-service/app/api/customer.py

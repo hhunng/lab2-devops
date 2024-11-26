@@ -1,0 +1,49 @@
+
+d
+join_subscription_customerFsubscription.SubscriptionCustomerRepository.join_subscription_customerself() ((-self() ((-"ˆ2
+0
+)" )(*""
+#unknown-value##unknown-value#2
+0
+) )(""
+#unknown-value##unknown-value#
+
+) )(+"
+join *8&
+$
+) )(4query"
+
+select *82
+0
+*Z *(b""
+#unknown-value##unknown-value#2
+0
+*= *(I""
+#unknown-value##unknown-value#3
+1
+*= *(L" 
+#get-field# id#get-field# id*2
+0
+*' *(3	""
+#unknown-value##unknown-value#"
+ 
+*' *(M
+"
+distinct *	8
+
+*' *(c"
+load *
+87
+5
+* *(!"$
+#get-field# gino#get-field# gino*
+
+* *(d"
+load *8
+
+* *(j"
+all *8:
+8
+* *(jresult""
+#unknown-value##unknown-value#
++ +(*D/Users/hungle/testing/billing-service/app/repository/subscription.py

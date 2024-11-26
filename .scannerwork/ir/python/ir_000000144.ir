@@ -1,0 +1,49 @@
+
+C
+join_login_vendor.vendor.VendorLoginRepository.join_login_vendorself*  *($self*  *($"ˆ2
+0
++ +(!""
+#unknown-value##unknown-value#2
+0
++ +(""
+#unknown-value##unknown-value#
+
++ +(""
+join *8&
+$
++ +(+query"
+
+select *82
+0
+,N ,(S""
+#unknown-value##unknown-value#2
+0
+,7 ,(=""
+#unknown-value##unknown-value#3
+1
+,7 ,(@" 
+#get-field# id#get-field# id*2
+0
+,' ,(-	""
+#unknown-value##unknown-value#"
+ 
+,' ,(A
+"
+distinct *	8
+
+,' ,(T"
+load *
+87
+5
+, ,(!"$
+#get-field# gino#get-field# gino*
+
+, ,(U"
+load *8
+
+, ,(["
+all *8:
+8
+, ,([result""
+#unknown-value##unknown-value#
+- -(*;/Users/hungle/testing/user-service/app/repository/vendor.py

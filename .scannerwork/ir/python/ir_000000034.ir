@@ -1,0 +1,49 @@
+
+Y
+join_content_publication=content.ContentPublicationRepository.join_content_publicationself(' ((+self(' ((+"ˆ2
+0
+) )((""
+#unknown-value##unknown-value#2
+0
+) )(""
+#unknown-value##unknown-value#
+
+) )()"
+join *8&
+$
+) )(2query"
+
+select *82
+0
+*P *([""
+#unknown-value##unknown-value#2
+0
+*8 *(?""
+#unknown-value##unknown-value#3
+1
+*8 *(B" 
+#get-field# id#get-field# id*2
+0
+*' *(.	""
+#unknown-value##unknown-value#"
+ 
+*' *(C
+"
+distinct *	8
+
+*' *(\"
+load *
+87
+5
+* *(!"$
+#get-field# gino#get-field# gino*
+
+* *(]"
+load *8
+
+* *(c"
+all *8:
+8
+* *(cresult""
+#unknown-value##unknown-value#
++ +(*D/Users/hungle/testing/subscription-service/app/repository/content.py

@@ -1,0 +1,22 @@
+
+(
+decrypt_profileadmin.decrypt_profileprofile_info> >(&profile_info> >(&"ê2
+0
+?
+ ?(""
+#unknown-value##unknown-value#*
+(
+?
+ ?(key"
+generate_key *8#
+!
+@ @(fernet"
+Fernet*
+
+A% A(:"
+
+encode *82
+0
+A A(;encoded_profile"
+encrypt *8
+B B(*8/Users/hungle/testing/user-service/app/services/admin.py

@@ -1,0 +1,23 @@
+
+,
+create_observablesales.create_observableloop (loop ("¹2
+0
+ ($""
+#unknown-value##unknown-value#6
+4
+ (%closure"
+#new-object##new-object#8
+6
+ ("$
+#set-field# loop#set-field# loop*+
+)
+ ("
+?python-partial-apply?*2
+0
+ (""
+#unknown-value##unknown-value# 
+
+ (%"
+
+create *8
+ (%*@/Users/hungle/testing/subscription-service/app/services/sales.py

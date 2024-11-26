@@ -1,0 +1,49 @@
+
+?
+join_login_admin+admin.AdminLoginRepository.join_login_adminself) )(#self) )(#"ˆ2
+0
+* *( ""
+#unknown-value##unknown-value#2
+0
+* *(""
+#unknown-value##unknown-value#
+
+* *(!"
+join *8&
+$
+* *(*query"
+
+select *82
+0
++L +(Q""
+#unknown-value##unknown-value#2
+0
++6 +(;""
+#unknown-value##unknown-value#3
+1
++6 +(>" 
+#get-field# id#get-field# id*2
+0
++' +(,	""
+#unknown-value##unknown-value#"
+ 
++' +(?
+"
+distinct *	8
+
++' +(R"
+load *
+87
+5
++ +(!"$
+#get-field# gino#get-field# gino*
+
++ +(S"
+load *8
+
++ +(Y"
+all *8:
+8
++ +(Yresult""
+#unknown-value##unknown-value#
+, ,(*:/Users/hungle/testing/user-service/app/repository/admin.py

@@ -1,0 +1,9 @@
+subscription.SubscriptionCustomerRepository.join_subscription_customer
+false
+2f4066515977c563ad17772158d02d06
+==
+all
+distinct
+join
+load
+select

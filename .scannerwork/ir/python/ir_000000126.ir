@@ -1,0 +1,49 @@
+
+c
+join_publication_messengerEpublication.PublicationMessengerRepository.join_publication_messengerself2) 2(-self2) 2(-"ˆ2
+0
+3! 3(*""
+#unknown-value##unknown-value#2
+0
+3 3(""
+#unknown-value##unknown-value#
+
+3 3(+"
+join *8&
+$
+3 3(4query"
+
+select *82
+0
+4X 4(a""
+#unknown-value##unknown-value#2
+0
+4< 4(G""
+#unknown-value##unknown-value#3
+1
+4< 4(J" 
+#get-field# id#get-field# id*2
+0
+4' 4(2	""
+#unknown-value##unknown-value#"
+ 
+4' 4(K
+"
+distinct *	8
+
+4' 4(b"
+load *
+87
+5
+4 4(!"$
+#get-field# gino#get-field# gino*
+
+4 4(c"
+load *8
+
+4 4(i"
+all *8:
+8
+4 4(iresult""
+#unknown-value##unknown-value#
+5 5(*H/Users/hungle/testing/subscription-service/app/repository/publication.py

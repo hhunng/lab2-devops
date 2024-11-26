@@ -1,0 +1,49 @@
+
+J
+join_billing_vendor3billing.BillingVendorRepository.join_billing_vendorself5" 5(&self5" 5(&"ˆ2
+0
+6 6(#""
+#unknown-value##unknown-value#2
+0
+6 6(""
+#unknown-value##unknown-value#
+
+6 6($"
+join *8&
+$
+6 6(-query"
+
+select *82
+0
+7P 7(V""
+#unknown-value##unknown-value#2
+0
+78 7(?""
+#unknown-value##unknown-value#3
+1
+78 7(B" 
+#get-field# id#get-field# id*2
+0
+7' 7(.	""
+#unknown-value##unknown-value#"
+ 
+7' 7(C
+"
+distinct *	8
+
+7' 7(W"
+load *
+87
+5
+7 7(!"$
+#get-field# gino#get-field# gino*
+
+7 7(X"
+load *8
+
+7 7(^"
+all *8:
+8
+7 7(^result""
+#unknown-value##unknown-value#
+8 8(*?/Users/hungle/testing/billing-service/app/repository/billing.py

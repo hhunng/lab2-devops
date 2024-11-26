@@ -1,0 +1,48 @@
+
+,
+extract_condensedadmin.extract_condensed‡
+1int" "str
+"password"str	
+"username"str"firstname"str
+"lastname"strprofiles9 9($profiles9 9($" 2
+0
+: :(u"
+#new-object##new-object#2list0
+.
+: :(2"
+#array-read##array-read#*8
+6
+: :(u"$
+#array-add-last##array-add-last#*0
+.
+:4 :(H"
+#array-read##array-read#*8
+6
+: :(u"$
+#array-add-last##array-add-last#*0
+.
+:J :(^
+"
+#array-read##array-read#*	8
+6
+: :(u"$
+#array-add-last##array-add-last#*
+0
+.
+:` :(t"
+#array-read##array-read#*8
+6
+: :(u"$
+#array-add-last##array-add-last#*3
+1
+: :(vprofile_info"
+
+join (*2str8A
+?
+;
+ ;("
+sleepasyncio.tasks.sleep*2typing.Coroutine2
+0
+; ;(""
+#unknown-value##unknown-value#
+< <(*8/Users/hungle/testing/user-service/app/services/admin.py

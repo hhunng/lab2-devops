@@ -1,0 +1,49 @@
+
+Z
+join_vendor_publication?publication.PublicationVendorRepository.join_vendor_publicationself,& ,(*self,& ,(*"ˆ2
+0
+-! -('""
+#unknown-value##unknown-value#2
+0
+- -(""
+#unknown-value##unknown-value#
+
+- -(("
+join *8&
+$
+- -(1query"
+
+select *82
+0
+.Q .(\""
+#unknown-value##unknown-value#2
+0
+.7 .(=""
+#unknown-value##unknown-value#3
+1
+.7 .(@" 
+#get-field# id#get-field# id*2
+0
+.' .(-	""
+#unknown-value##unknown-value#"
+ 
+.' .(A
+"
+distinct *	8
+
+.' .(]"
+load *
+87
+5
+. .(!"$
+#get-field# gino#get-field# gino*
+
+. .(^"
+load *8
+
+. .(d"
+all *8:
+8
+. .(dresult""
+#unknown-value##unknown-value#
+/ /(*H/Users/hungle/testing/subscription-service/app/repository/publication.py

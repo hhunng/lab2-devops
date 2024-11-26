@@ -1,0 +1,13 @@
+sales.process_list
+false
+48f03b235dcb6b4cf1815c77ceae4f12
+builtins.__has_next
+builtins.iter
+builtins.next
+str.__init__
+==
+get_all_sales
+join
+on_completed
+on_error
+on_next

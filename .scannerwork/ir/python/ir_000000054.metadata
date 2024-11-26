@@ -1,0 +1,5 @@
+sales.create_observable.evaluate_profit
+false
+9a46bf8774429f16dcda420f87366c50
+asyncio.tasks.ensure_future
+sales.process_list
