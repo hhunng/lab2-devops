@@ -5,7 +5,6 @@ pipeline {
         SONAR_CLOUD_URL = 'https://sonarcloud.io'
         SONAR_CLOUD_TOKEN = credentials('sonartoken') 
         SONAR_PROJECT_KEY = 'devops-group15_lab2' 
-        SONAR_PROJECT_NAME = 'Your Project Name' 
         SONAR_ORGANIZATION_NAME = 'DevOps-Group15'
         GITHUB_CREDENTIALS = credentials('gitsshkeys')
     }
@@ -13,7 +12,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git credentialsId: 'gitsshkeys', url: 'https://github.com/hhunng/lab2-devops.git'
+                git branch: 'main', credentialsId: 'gitsshkeys', url: 'https://github.com/hhunng/lab2-devops.git'
             }
         }
 
