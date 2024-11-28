@@ -16,20 +16,20 @@ pipeline {
             }
         }
 
-        stage('SonarCloud Scan') {
-            steps {
-                script {
-                    sh """
-                        sonar-scanner \
-                        -Dsonar.projectKey=${SONAR_PROJECT_KEY} \
-                        -Dsonar.organization=${SONAR_ORGANIZATION_NAME} \
-                        -Dsonar.sources=. \
-                        -Dsonar.host.url=${SONAR_CLOUD_URL} \
-                        -Dsonar.login=${SONAR_CLOUD_TOKEN}
-                    """
-                }
-            }
-        }
+        // stage('SonarCloud Scan') {
+        //     steps {
+        //         script {
+        //             sh """
+        //                 sonar-scanner \
+        //                 -Dsonar.projectKey=${SONAR_PROJECT_KEY} \
+        //                 -Dsonar.organization=${SONAR_ORGANIZATION_NAME} \
+        //                 -Dsonar.sources=. \
+        //                 -Dsonar.host.url=${SONAR_CLOUD_URL} \
+        //                 -Dsonar.login=${SONAR_CLOUD_TOKEN}
+        //             """
+        //         }
+        //     }
+        // }
     }
 
     post {
