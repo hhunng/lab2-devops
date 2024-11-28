@@ -11,21 +11,38 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', credentialsId: 'gitsshkeys', url: 'https://github.com/hhunng/lab2-devops.git'
+                script {
+                    git branch: 'main', credentialsId: 'gitsshkeys', url: 'https://github.com/hhunng/lab2-devops.git'
+                }
+            }
+        }
+
+        stage('Check the code') {
+            steps {
+                script {
+                    sh """
+                        pwd
+                        ls
+                    """
+                }
             }
         }
 
         stage('SonarCloud Scan') {
             steps {
-                withCredentials([string(credentialsId: 'sonartoken', variable: 'SONAR_CLOUD_TOKEN')]) {
-                    sh """
-                        sonar-scanner \
-                        -Dsonar.projectKey=${SONAR_PROJECT_KEY} \
-                        -Dsonar.organization=${SONAR_ORGANIZATION_NAME} \
-                        -Dsonar.sources=. \
-                        -Dsonar.host.url=${SONAR_CLOUD_URL} \
-                        -Dsonar.login=${SONAR_CLOUD_TOKEN}
-                    """
+                script {
+                    withCredentials([string(credentialsId: 'sonartoken', variable: 'SONAR_CLOUD_TOKEN')]) {
+                        withSonarQubeEnv('sonarQube') {
+                            sh """
+                                sonar-scanner \
+                                -Dsonar.projectKey=${SONAR_PROJECT_KEY} \
+                                -Dsonar.organization=${SONAR_ORGANIZATION_NAME} \
+                                -Dsonar.sources=. \
+                                -Dsonar.host.url=${SONAR_CLOUD_URL} \
+                                -Dsonar.login=${SONAR_CLOUD_TOKEN}
+                            """
+                        }
+                    }
                 }
             }
         }
