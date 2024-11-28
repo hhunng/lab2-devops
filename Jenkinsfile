@@ -5,7 +5,6 @@ pipeline {
         SONAR_CLOUD_URL = 'https://sonarcloud.io'
         SONAR_PROJECT_KEY = 'devops-group15_lab2' 
         SONAR_ORGANIZATION_NAME = 'DevOps-Group15'
-        GITHUB_CREDENTIALS = credentials('gitsshkeys')
     }
 
     stages {
