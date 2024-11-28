@@ -12,7 +12,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', credentialsId: 'gitsshkeys', url: 'https://github.com/hhunng/lab2-devops.git'
+                git branch: 'main', credentialsId: 'gitsshkeys', url: 'git@github.com:hhunng/lab2-devops.git'
             }
         }
 
