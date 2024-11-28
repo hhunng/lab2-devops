@@ -4,7 +4,6 @@ pipeline {
     environment {
         SONAR_CLOUD_URL = 'https://sonarcloud.io'
         SONAR_PROJECT_KEY = 'devops-group15_lab2' 
-        SONAR_ORGANIZATION_NAME = 'DevOps-Group15'
     }
 
     stages {
@@ -23,7 +22,6 @@ pipeline {
                     sh """
                         ${scannerHome}/bin/sonar-scanner \
                         -Dsonar.projectKey=${SONAR_PROJECT_KEY} \
-                        -Dsonar.organization=${SONAR_ORGANIZATION_NAME} \
                         -Dsonar.sources=. \
                         -Dsonar.host.url=${SONAR_CLOUD_URL} \
                     """
