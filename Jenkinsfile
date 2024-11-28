@@ -3,7 +3,6 @@ pipeline {
 
     environment {
         SONAR_CLOUD_URL = 'https://sonarcloud.io'
-        SONAR_CLOUD_TOKEN = credentials('sonartoken') 
         SONAR_PROJECT_KEY = 'devops-group15_lab2' 
         SONAR_ORGANIZATION_NAME = 'DevOps-Group15'
         GITHUB_CREDENTIALS = credentials('gitsshkeys')
@@ -19,14 +18,16 @@ pipeline {
         stage('SonarCloud Scan') {
             steps {
                 script {
-                    sh """
-                        sonar-scanner \
-                        -Dsonar.projectKey=${SONAR_PROJECT_KEY} \
-                        -Dsonar.organization=${SONAR_ORGANIZATION_NAME} \
-                        -Dsonar.sources=. \
-                        -Dsonar.host.url=${SONAR_CLOUD_URL} \
-                        -Dsonar.login=${SONAR_CLOUD_TOKEN}
-                    """
+                    withCredentials([string(credentialsId: 'sonartoken', variable: 'SONAR_CLOUD_TOKEN')]) {
+                        sh """
+                            sonar-scanner \
+                            -Dsonar.projectKey=${SONAR_PROJECT_KEY} \
+                            -Dsonar.organization=${SONAR_ORGANIZATION_NAME} \
+                            -Dsonar.sources=. \
+                            -Dsonar.host.url=${SONAR_CLOUD_URL} \
+                            -Dsonar.login=\${SONAR_CLOUD_TOKEN}
+                        """
+                    }
                 }
             }
         }
