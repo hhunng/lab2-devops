@@ -15,10 +15,15 @@ pipeline {
         }
 
         stage('SonarCloud Scan') {
+
+            environment {
+                scannerHome = tool 'mysonarscanner4'
+            }
+
             steps {
-                withCredentials([string(credentialsId: 'sonartoken', variable: 'SONAR_CLOUD_TOKEN')]) {
+                withCredentials('sonarQube') {
                     sh """
-                        sonar-scanner \
+                        ${scannerHome}/bin/sonar-scanner sonar-scanner \
                         -Dsonar.projectKey=${SONAR_PROJECT_KEY} \
                         -Dsonar.organization=${SONAR_ORGANIZATION_NAME} \
                         -Dsonar.sources=. \
