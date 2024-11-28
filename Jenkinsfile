@@ -16,6 +16,17 @@ pipeline {
             }
         }
 
+
+        stage('Check the code') {
+                    steps {
+                        script {
+                            sh """
+                                pwd
+                                ls
+                            """
+                        }
+                    }
+
         // stage('SonarCloud Scan') {
         //     steps {
         //         script {
