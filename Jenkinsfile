@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         SONAR_CLOUD_URL = 'https://sonarcloud.io'
-        SONAR_PROJECT_KEY = 'devops-group15_lab2' 
+        SONAR_PROJECT_KEY = 'devops-group15_lab2'
         SONAR_ORGANIZATION_NAME = 'DevOps-Group15'
     }
 
@@ -15,21 +15,19 @@ pipeline {
         }
 
         stage('SonarCloud Scan') {
-
-            environment {
-                scannerHome = tool 'mysonarscanner4'
-            }
-
             steps {
-                withCredentials('sonarQube') {
-                    sh """
-                        ${scannerHome}/bin/sonar-scanner sonar-scanner \
-                        -Dsonar.projectKey=${SONAR_PROJECT_KEY} \
-                        -Dsonar.organization=${SONAR_ORGANIZATION_NAME} \
-                        -Dsonar.sources=. \
-                        -Dsonar.host.url=${SONAR_CLOUD_URL} \
-                        -Dsonar.login=${SONAR_CLOUD_TOKEN}
-                    """
+                withSonarQubeEnv('sonarQube') { // Assuming 'sonarQube' is the name of your SonarQube server configuration in Jenkins
+                    script {
+                        def scannerHome = tool 'mysonarscanner4'
+                        sh """
+                            ${scannerHome}/bin/sonar-scanner \
+                            -Dsonar.projectKey=${SONAR_PROJECT_KEY} \
+                            -Dsonar.organization=${SONAR_ORGANIZATION_NAME} \
+                            -Dsonar.sources=. \
+                            -Dsonar.host.url=${SONAR_CLOUD_URL} \
+                            -Dsonar.login=${SONAR_CLOUD_TOKEN}
+                        """
+                    }
                 }
             }
         }
